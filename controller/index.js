@@ -45,6 +45,7 @@ exports.deleteTransaction = async (req, res, next) => {
   }
 };
 exports.getTotal = async (req, res, next) => {
+  // mongodb+srv://dhruv:dhruvsharma%402001@cluster0.3dbe8.mongodb.net/expense-tracker?retryWrites=true&w=majority
   try {
     const transaction = await transactionModel.find();
     if (!transaction) {
